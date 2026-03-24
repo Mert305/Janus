@@ -1,0 +1,13 @@
+# Honeypot Erken Uyarı Sistemi - Python Bağımlılıkları
+# =====================================================
+# Kurulum: pip install -r requirements.txt
+
+# Temel bağımlılıklar
+PyYAML>=6.0              # YAML yapılandırma dosyası okuma
+paramiko>=3.0            # SSH sunucu simülasyonu
+
+# Ağ trafiği yakalama (isteğe bağlı - yönetici yetkisi gerektirir)
+scapy>=2.5               # PCAP paket yakalama ve analiz
+
+# Web dashboard (isteğe bağlı)
+flask>=3.0               # Web arayüzü

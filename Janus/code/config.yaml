@@ -1,0 +1,109 @@
+# ============================================================
+#  Honeypot Erken Uyarı Sistemi - Ana Yapılandırma Dosyası
+# ============================================================
+
+general:
+  hostname: "corp-server-01"
+  log_directory: "logs"
+  pcap_directory: "captures"
+  report_directory: "reports"
+  timezone: "Europe/Istanbul"
+
+# ---------- Sahte Servis Yapılandırmaları ----------
+services:
+  ssh:
+    enabled: true
+    bind_host: "0.0.0.0"
+    bind_port: 2222
+    server_banner: "SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.1"
+    # Sahte kullanıcı veritabanı (saldırganı oyalamak için)
+    fake_credentials:
+      admin: "admin123"
+      root: "toor"
+      user: "password"
+    max_auth_attempts: 5
+    session_timeout: 300
+
+  ftp:
+    enabled: true
+    bind_host: "0.0.0.0"
+    bind_port: 2121
+    server_banner: "220 corp-ftp-01 FTP server (vsftpd 3.0.5) ready."
+    fake_credentials:
+      anonymous: ""
+      admin: "ftp@admin"
+      backup: "backup2024"
+    fake_filesystem:
+      - "/home/admin/passwords.txt"
+      - "/var/backups/db_dump.sql"
+      - "/etc/shadow.bak"
+    max_auth_attempts: 5
+
+  http:
+    enabled: true
+    bind_host: "0.0.0.0"
+    bind_port: 8080
+    server_banner: "Apache/2.4.54 (Ubuntu)"
+    # Sahte login sayfası
+    fake_login_path: "/admin/login"
+    fake_api_paths:
+      - "/api/v1/users"
+      - "/api/v1/config"
+      - "/wp-admin/"
+      - "/phpmyadmin/"
+      - "/.env"
+      - "/backup.zip"
+
+# ---------- PCAP Yakalama ----------
+pcap:
+  enabled: true
+  interface: "auto"       # "auto" veya belirli arayüz adı
+  capture_filter: ""      # BPF filtresi (boş = tümünü yakala)
+  max_file_size_mb: 100
+  rotation_count: 10
+
+# ---------- Erken Uyarı Sistemi ----------
+alerting:
+  enabled: true
+  # Eşik değerleri
+  thresholds:
+    brute_force_attempts: 5        # Bu kadar başarısız girişten sonra alarm
+    brute_force_window_sec: 60     # Zaman penceresi (saniye)
+    port_scan_ports: 10            # Bu kadar port tarama = alarm
+    port_scan_window_sec: 30
+    malware_upload_alert: true     # Dosya yükleme = anında alarm
+    privilege_escalation_keywords:
+      - "sudo"
+      - "su root"
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "chmod +s"
+      - "wget"
+      - "curl"
+      - "nc -e"
+      - "bash -i"
+      - "python -c"
+
+  # Bildirim yöntemleri
+  notifications:
+    console: true
+    log_file: true
+    # E-posta bildirimi (isteğe bağlı)
+    email:
+      enabled: false
+      smtp_server: "smtp.example.com"
+      smtp_port: 587
+      sender: "honeypot@example.com"
+      recipient: "soc@example.com"
+
+# ---------- Analiz Ayarları ----------
+analysis:
+  auto_analyze_interval_sec: 300   # Her 5 dakikada otomatik analiz
+  geo_ip_enabled: false
+  report_format: "html"            # "html", "json", "pdf"
+
+# ---------- Dashboard ----------
+dashboard:
+  enabled: true
+  bind_host: "127.0.0.1"
+  bind_port: 5000
