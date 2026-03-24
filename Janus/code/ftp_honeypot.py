@@ -526,9 +526,11 @@ class FTPHoneypot:
 
         _, data_port = data_sock.getsockname()
 
-        # PASV yanıtında IP ve port bilgisi
-        ip_parts = self.host if self.host != "0.0.0.0" else "127.0.0.1"
-        ip_str = ip_parts.replace(".", ",")
+        # PASV yanıtında istemcinin bağlı olduğu gerçek sunucu IP'sini kullan
+        local_ip = control_sock.getsockname()[0]
+        if local_ip == "0.0.0.0":
+            local_ip = "127.0.0.1"
+        ip_str = local_ip.replace(".", ",")
         p1 = data_port // 256
         p2 = data_port % 256
 

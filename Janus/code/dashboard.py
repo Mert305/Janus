@@ -336,13 +336,25 @@ class Dashboard:
 
         @app.route("/api/alert_stats")
         def api_alert_stats():
-            return jsonify(self.alert_engine.get_stats())
+            from collections import Counter
+            alerts = self.hp_logger.read_alerts(last_n=10000)
+            type_counter = Counter(a.get("alert_type", "other") for a in alerts)
+            severity_counter = Counter(a.get("severity", "unknown") for a in alerts)
+            stats = {"total_alerts": len(alerts)}
+            stats.update(type_counter)
+            stats["--- Severity ---"] = ""
+            stats.update({f"{k.upper()}": v for k, v in severity_counter.items()})
+            return jsonify(stats)
 
         @app.route("/api/top_ips")
         def api_top_ips():
             events = self.hp_logger.read_events(last_n=10000)
             from collections import Counter
-            ip_counter = Counter(e.get("src_ip", "") for e in events)
+            ip_counter = Counter(
+                e.get("src_ip", "")
+                for e in events
+                if e.get("src_ip") and e.get("src_ip") not in ("", "127.0.0.1")
+            )
             return jsonify([
                 {"ip": ip, "count": cnt}
                 for ip, cnt in ip_counter.most_common(15)
