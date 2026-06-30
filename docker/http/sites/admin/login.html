@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chronova Staff Portal</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Georgia',serif;background:#0a0a0a;color:#e8e0d0;display:flex;align-items:center;justify-content:center;min-height:100vh}
+  .wrap{width:100%;max-width:400px;padding:20px}
+  .logo{text-align:center;margin-bottom:40px}
+  .logo h1{font-size:22px;letter-spacing:8px;color:#c9a84c;font-weight:normal}
+  .logo p{font-size:10px;letter-spacing:3px;color:#444;margin-top:6px;text-transform:uppercase}
+  .gold-line{width:40px;height:1px;background:#c9a84c;margin:16px auto}
+  form{background:#111;border:1px solid #1e1e1e;padding:40px;border-radius:2px}
+  form h2{font-size:14px;letter-spacing:3px;color:#888;text-transform:uppercase;margin-bottom:30px;font-weight:normal}
+  label{display:block;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#555;margin-bottom:8px}
+  input{width:100%;padding:12px 14px;background:#0d0d0d;border:1px solid #222;color:#e8e0d0;font-size:13px;border-radius:1px;font-family:Arial,sans-serif;margin-bottom:20px;transition:.2s}
+  input:focus{outline:none;border-color:#c9a84c}
+  button{width:100%;padding:13px;background:#c9a84c;color:#0a0a0a;border:none;font-size:11px;letter-spacing:3px;text-transform:uppercase;cursor:pointer;transition:.2s;font-family:'Georgia',serif}
+  button:hover{background:#e2c47a}
+  .hint{text-align:center;margin-top:24px;font-size:10px;color:#333;letter-spacing:1px}
+  .hint a{color:#444;text-decoration:underline}
+  footer{text-align:center;margin-top:40px;font-size:10px;color:#2a2a2a;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">
+    <h1>CHRONOVA</h1>
+    <div class="gold-line"></div>
+    <p>Staff Portal · Authorized Access Only</p>
+  </div>
+  <form method="POST" action="/admin/login">
+    <h2>Sign In</h2>
+    <label>Username</label>
+    <input type="text" name="username" autocomplete="username" autofocus>
+    <label>Password</label>
+    <input type="password" name="password" autocomplete="current-password">
+    <button type="submit">Access Portal</button>
+    <div class="hint">Forgot credentials? Contact <a href="#">IT Support</a></div>
+  </form>
+  <footer>CHRONOVA S.A. · Geneva · Secure Internal Network · v4.2.1</footer>
+</div>
+</body>
+</html>

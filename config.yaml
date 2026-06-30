@@ -1,0 +1,189 @@
+# ============================================================
+#  Honeypot Erken Uyarı Sistemi - Ana Yapılandırma Dosyası
+# ============================================================
+
+general:
+  hostname: "corp-server-01"
+  log_directory: "logs"
+  pcap_directory: "captures"
+  report_directory: "reports"
+  timezone: "Europe/Istanbul"
+
+# ---------- Sahte Servis Yapılandırmaları ----------
+services:
+  ssh:
+    enabled: true
+    bind_host: "0.0.0.0"
+    bind_port: 2222
+    server_banner: "SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.1"
+    # Sahte kullanıcı veritabanı (saldırganı oyalamak için)
+    fake_credentials:
+      admin: "admin123"
+      root: "toor"
+      user: "password"
+      sysadmin: "Chronova@2024!"
+    max_auth_attempts: 5
+    session_timeout: 300
+
+  ftp:
+    enabled: true
+    bind_host: "0.0.0.0"
+    bind_port: 2121
+    server_banner: "220 corp-ftp-01 FTP server (vsftpd 3.0.5) ready."
+    fake_credentials:
+      anonymous: ""
+      admin: "ftp@admin"
+      backup: "backup2024"
+      ftpbackup: "Ftp@Backup2024"
+    fake_filesystem:
+      - "/home/admin/passwords.txt"
+      - "/var/backups/db_dump.sql"
+      - "/etc/shadow.bak"
+    max_auth_attempts: 5
+
+  http:
+    enabled: true
+    bind_host: "0.0.0.0"
+    bind_port: 8080
+    server_banner: "Apache/2.4.54 (Ubuntu)"
+    # Sahte login sayfası
+    fake_login_path: "/admin/login"
+    fake_api_paths:
+      - "/api/v1/users"
+      - "/api/v1/config"
+      - "/wp-admin/"
+      - "/phpmyadmin/"
+      - "/.env"
+      - "/backup.zip"
+
+# ---------- PCAP Yakalama ----------
+pcap:
+  enabled: false   # Windows'ta Npcap kurulu değilse false bırak; Linux'ta true yapılabilir
+  # "auto" → scapy varsayılanı seçer
+  # Docker bridge yakalamak istenirse (Linux): "docker0" veya `ip link` ile gözüken "br-XXXXXXXX"
+  # Windows/WSL2: "vEthernet (WSL)" veya Docker Desktop'ın ağ adaptörü
+  interface: "auto"
+  # Decoy portlarını filtrelemek için örnek: 'tcp port 21 or tcp port 80 or tcp port 2222'
+  capture_filter: ""
+  max_file_size_mb: 100
+  rotation_count: 10
+
+# ---------- Erken Uyarı Sistemi ----------
+alerting:
+  enabled: true
+  # Eşik değerleri
+  thresholds:
+    brute_force_attempts: 5        # Bu kadar başarısız girişten sonra alarm
+    brute_force_window_sec: 60     # Zaman penceresi (saniye)
+    port_scan_ports: 10            # Bu kadar port tarama = alarm
+    port_scan_window_sec: 30
+    # DDoS / bağlantı seli
+    ddos_connections: 30           # Tek IP'den bu kadar bağlantı = flood
+    ddos_window_sec: 10
+    global_ddos_connections: 200   # Toplam bağlantı eşiği = DDoS
+    global_ddos_window_sec: 10
+    malware_upload_alert: true     # Dosya yükleme = anında alarm
+    privilege_escalation_keywords:
+      - "sudo"
+      - "su root"
+      - "/etc/passwd"
+      - "/etc/shadow"
+      - "chmod +s"
+      - "wget"
+      - "curl"
+      - "nc -e"
+      - "bash -i"
+      - "python -c"
+
+  # Bildirim yöntemleri
+  notifications:
+    console: true
+    log_file: true
+    # E-posta bildirimi (isteğe bağlı)
+    email:
+      enabled: false
+      smtp_server: "smtp.example.com"
+      smtp_port: 587
+      sender: "honeypot@example.com"
+      recipient: "soc@example.com"
+
+# ---------- Analiz Ayarları ----------
+analysis:
+  auto_analyze_interval_sec: 300   # Her 5 dakikada otomatik analiz
+  geo_ip_enabled: false
+  report_format: "html"            # "html", "json", "pdf"
+
+# ---------- Dashboard ----------
+dashboard:
+  enabled: true
+  bind_host: "0.0.0.0"
+  bind_port: 5000
+
+# ---------- Threat Intelligence ----------
+threat_intel:
+  enabled: true
+  cache_ttl_sec: 3600          # Aynı IP için cache süresi (saniye)
+
+  # MaxMind GeoLite2 veritabanı dosyaları (ücretsiz kayıt gerektirir)
+  # İndirme: https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
+  # Dosyaları proje kök dizinine koyun.
+  geoip:
+    city_db: "GeoLite2-City.mmdb"   # Yoksa GeoIP devre dışı kalır
+    asn_db:  "GeoLite2-ASN.mmdb"    # Yoksa ASN/ISP bilgisi gelmez
+
+  # AbuseIPDB — https://www.abuseipdb.com/api → API key al (ücretsiz tier)
+  abuseipdb:
+    api_key: ""                      # Boş bırakılırsa bu kaynak atlanır
+    timeout_sec: 5
+
+  # Shodan — https://account.shodan.io → API key al
+  shodan:
+    api_key: ""                      # Boş bırakılırsa bu kaynak atlanır
+    timeout_sec: 8
+
+# ---------- Multi-Service Correlation Engine ----------
+correlation:
+  enabled: true
+  kill_chain_min_stages: 3          # Kaç aşama geçilince alarm üretilir
+  kill_chain_min_services: 2        # Kaç farklı servise erişilmeli
+  check_interval_sec: 30            # Korelasyon kontrol sıklığı
+  session_ttl_sec: 7200             # 2 saat görünmezse oturum silinir
+
+# ---------- Docker Sandbox & Konteynerleştirilmiş Servisler ----------
+docker:
+  enabled: true
+  # Windows: "npipe:////./pipe/docker_engine"  |  Linux: "unix:///var/run/docker.sock"
+  socket: "auto"
+
+  # SSH login sonrası saldırgana sunulan tek kullanımlık sandbox
+  sandbox:
+    image: "janus-sandbox:latest"
+    dockerfile: "docker/Dockerfile.sandbox"
+    build_context: "docker"
+    network_mode: "none"          # ENETUNREACH; egress denemelerini connect() loguyla yakalarız
+    read_only: true
+    tmpfs:
+      "/tmp": "size=64m,mode=1777"
+      "/var/run": "size=8m"
+      "/home/admin": "size=16m,uid=1000,gid=1000,mode=0755"
+    cap_drop: ["ALL"]
+    security_opt:
+      - "no-new-privileges:true"
+    mem_limit: "256m"
+    cpus: 0.5
+    pids_limit: 200
+    user: "1000:1000"
+    session_ttl_sec: 600          # oturum 10 dk sonra zorla kapatılır
+    max_concurrent: 20
+    auto_remove: true
+
+  # Kalıcı çalışan decoy servisler (compose ile orkestre edilir)
+  services:
+    ftp:
+      image: "janus-ftp:latest"
+      container_name: "janus-ftp"
+      log_path: "logs/ftp/vsftpd.log"
+    http:
+      image: "janus-http:latest"
+      container_name: "janus-http"
+      log_path: "logs/http/access.log"

@@ -1,0 +1,43 @@
+# SSH oturumu başına spawn edilen tek kullanımlık sandbox
+FROM debian:bookworm-slim
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    LANG=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8
+
+RUN echo 'Acquire::Retries "5";' > /etc/apt/apt.conf.d/80-retries \
+ && apt-get update && apt-get install -y --no-install-recommends \
+        bash coreutils util-linux procps iproute2 net-tools iputils-ping \
+        curl wget nano vim-tiny less openssh-client \
+        ca-certificates locales tzdata \
+    && locale-gen en_US.UTF-8 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Ubuntu gibi görünsün
+RUN mkdir -p /etc/lsb-release.d && \
+    echo 'DISTRIB_ID=Ubuntu\nDISTRIB_RELEASE=22.04\nDISTRIB_CODENAME=jammy\nDISTRIB_DESCRIPTION="Ubuntu 22.04.3 LTS"' > /etc/lsb-release && \
+    echo 'Ubuntu 22.04.3 LTS' > /etc/issue
+
+RUN groupadd -g 1000 admin \
+ && useradd  -m -u 1000 -g 1000 -s /bin/bash admin    && echo 'admin:admin123'         | chpasswd \
+ && useradd  -m -u 1001 -g 1000 -s /bin/bash sysadmin && echo 'sysadmin:Chronova@2024!' | chpasswd \
+ && echo 'root:toor' | chpasswd
+
+COPY decoys/passwords.txt   /home/admin/passwords.txt
+COPY decoys/dotenv          /var/www/.env
+COPY decoys/db_dump.sql     /var/backups/db_dump.sql
+COPY decoys/shadow.bak      /etc/shadow.bak
+COPY decoys/motd            /etc/motd
+COPY decoys/bash_history    /home/admin/.bash_history
+
+RUN mkdir -p /var/www /var/backups \
+ && chown admin:admin /home/admin/passwords.txt /home/admin/.bash_history \
+ && chmod 600 /home/admin/passwords.txt /home/admin/.bash_history \
+ && chown www-data:www-data /var/www/.env  && chmod 644 /var/www/.env \
+ && chmod 644 /var/backups/db_dump.sql \
+ && chmod 600 /etc/shadow.bak
+
+WORKDIR /home/admin
+USER admin
+
+CMD ["/bin/bash", "-i"]

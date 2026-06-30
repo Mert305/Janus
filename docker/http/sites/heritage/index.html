@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage | CHRONOVA</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--gold:#c9a84c;--dark:#0a0a0a;--dark2:#111;--text:#e8e0d0}
+  body{font-family:'Georgia',serif;background:var(--dark);color:var(--text)}
+  a{color:inherit;text-decoration:none}
+  nav{position:fixed;top:0;width:100%;background:rgba(10,10,10,.95);border-bottom:1px solid #2a2a2a;z-index:100;padding:18px 60px;display:flex;align-items:center;justify-content:space-between}
+  .logo{font-size:26px;letter-spacing:8px;color:var(--gold);font-weight:normal}
+  .logo span{font-size:11px;display:block;letter-spacing:4px;color:#888;margin-top:2px}
+  nav ul{list-style:none;display:flex;gap:40px}
+  nav ul a{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#aaa;transition:.2s}
+  nav ul a:hover,nav ul a.active{color:var(--gold)}
+  .hero{padding:160px 60px 100px;text-align:center;background:radial-gradient(ellipse at top,#1a1208 0%,var(--dark) 60%)}
+  .hero .sub{font-size:11px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:16px}
+  .hero h1{font-size:52px;font-weight:normal;letter-spacing:4px;margin-bottom:16px}
+  .hero p{color:#666;max-width:600px;margin:0 auto;font-size:14px;line-height:2}
+  .gold-line{width:60px;height:1px;background:var(--gold);margin:20px auto}
+  .timeline{max-width:900px;margin:0 auto;padding:80px 60px}
+  .timeline h2{text-align:center;font-size:32px;font-weight:normal;letter-spacing:4px;margin-bottom:60px}
+  .entry{display:grid;grid-template-columns:120px 1px 1fr;gap:0 40px;margin-bottom:60px;align-items:start}
+  .year{font-size:32px;color:var(--gold);letter-spacing:2px;text-align:right;padding-top:4px}
+  .line{background:#2a2a2a;position:relative}
+  .line::before{content:'';position:absolute;top:8px;left:-5px;width:10px;height:10px;border-radius:50%;background:var(--gold)}
+  .content h3{font-size:16px;letter-spacing:2px;font-weight:normal;margin-bottom:10px;color:var(--text)}
+  .content p{font-size:13px;color:#666;line-height:2}
+  .stats-row{background:#111;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a;padding:60px;display:flex;justify-content:center;gap:100px;text-align:center}
+  .stat-num{font-size:48px;color:var(--gold);letter-spacing:2px}
+  .stat-label{font-size:11px;color:#444;letter-spacing:3px;text-transform:uppercase;margin-top:8px}
+  .founders{padding:80px 60px;max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+  .founders h2{font-size:36px;font-weight:normal;letter-spacing:3px;margin-bottom:24px;grid-column:1/-1}
+  .founders h2 span{color:var(--gold)}
+  .founders p{color:#777;line-height:2;font-size:14px;margin-bottom:16px}
+  .founders-svg{display:flex;align-items:center;justify-content:center}
+  footer{background:#111;border-top:1px solid #1a1a1a;padding:40px;text-align:center;font-size:11px;color:#333;letter-spacing:2px}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">CHRONOVA<span>Geneva · Est. 1952</span></div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/collections">Collections</a></li>
+    <li><a href="/heritage" class="active">Heritage</a></li>
+    <li><a href="/boutiques">Boutiques</a></li>
+    <li><a href="/admin/login">Staff Portal</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="sub">Est. 1952</div>
+  <h1>Our Heritage</h1>
+  <div class="gold-line"></div>
+  <p>Seven decades of uninterrupted watchmaking in the Vallée de Joux. Every Chronova is the work of a single master artisan, from first gear to final regulation.</p>
+</div>
+
+<div class="stats-row">
+  <div><div class="stat-num">1952</div><div class="stat-label">Founded</div></div>
+  <div><div class="stat-num">72</div><div class="stat-label">Years of Craft</div></div>
+  <div><div class="stat-num">14</div><div class="stat-label">Master Watchmakers</div></div>
+  <div><div class="stat-num">847</div><div class="stat-label">Parts per Movement</div></div>
+</div>
+
+<div class="timeline">
+  <h2>A Century in the Making</h2>
+
+  <div class="entry">
+    <div class="year">1952</div>
+    <div class="line"></div>
+    <div class="content">
+      <h3>The Founding</h3>
+      <p>Heinrich Voss, a trained watchmaker from Biel, establishes Chronova S.A. in Le Sentier, Vallée de Joux. The first workshop employs three artisans and produces 24 watches in its inaugural year.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="year">1961</div>
+    <div class="line"></div>
+    <div class="content">
+      <h3>First In-House Calibre</h3>
+      <p>After nine years of development, Chronova unveils the CV-100 — its first entirely manufacture movement. The automatic calibre beats at 18,000 vph and offers a 42-hour power reserve.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="year">1974</div>
+    <div class="line"></div>
+    <div class="content">
+      <h3>The Nautique</h3>
+      <p>Responding to growing demand from professional divers, Chronova launches the Nautique with 300m water resistance. It becomes the brand's first commercial success beyond Switzerland.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="year">1989</div>
+    <div class="line"></div>
+    <div class="content">
+      <h3>Second Generation</h3>
+      <p>Klaus Voss inherits the manufacture from his father. Under his leadership, Chronova doubles its workforce and opens its first boutique on the Rue du Rhône, Geneva.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="year">2008</div>
+    <div class="line"></div>
+    <div class="content">
+      <h3>Calibre CV-3200</h3>
+      <p>Chronova introduces the CV-3200 — a silicon-escapement automatic with 72 hours of power reserve and 847 individual components. Entirely designed and manufactured in-house.</p>
+    </div>
+  </div>
+
+  <div class="entry">
+    <div class="year">2024</div>
+    <div class="line"></div>
+    <div class="content">
+      <h3>Today</h3>
+      <p>Under the third generation of the Voss family, Chronova produces approximately 4,000 timepieces annually. Every watch leaves the manufacture only after a 72-hour continuous regulation test.</p>
+    </div>
+  </div>
+</div>
+
+<footer>© 2024 CHRONOVA S.A. · Geneva, Switzerland · All Rights Reserved</footer>
+</body>
+</html>

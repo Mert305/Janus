@@ -1,0 +1,450 @@
+[2026-04-28 10:19:05] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260428_101905.html
+[2026-04-28 10:19:05] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 09:32:52] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-05-05 09:32:52] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-05-05 09:32:52] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-05-05 09:32:52] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-05-05 09:32:52] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-05-05 09:32:52] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:52] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-05-05 09:32:52] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:52] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-05-05 09:32:52] ERROR    [MainThread] `docker` komutu bulunamadı — Docker yüklü mü?
+[2026-05-05 09:32:52] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-05-05 09:32:52] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-05-05 09:32:52] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-05-05 09:32:52] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-05-05 09:32:52] INFO     [MainThread] PCAP yakalama başlatılıyor | Filtre: tcp and (port 2222 or port 2121 or port 8080) | Dizin: captures
+[2026-05-05 09:32:52] ERROR    [pcap-capture] PCAP yakalama hatası: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+[2026-05-05 09:32:52] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-05-05 09:32:52] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-05-05 09:32:52] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-05-05 09:32:52] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:52] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-05-05 09:32:52] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-05-05 09:32:52] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:53] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-05-05 09:32:53] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-05-05 09:32:53] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-05-05 09:32:53] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-05-05 09:32:53] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-05-05 09:32:53] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:53] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-05-05 09:32:53] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:53] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-05-05 09:32:53] ERROR    [MainThread] `docker` komutu bulunamadı — Docker yüklü mü?
+[2026-05-05 09:32:53] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-05-05 09:32:53] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-05-05 09:32:53] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-05-05 09:32:53] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-05-05 09:32:53] INFO     [MainThread] PCAP yakalama başlatılıyor | Filtre: tcp and (port 2222 or port 2121 or port 8080) | Dizin: captures
+[2026-05-05 09:32:53] ERROR    [pcap-capture] PCAP yakalama hatası: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+[2026-05-05 09:32:53] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-05-05 09:32:53] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-05-05 09:32:53] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-05-05 09:32:53] INFO     [MainThread] ============================================================
+[2026-05-05 09:32:53] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-05-05 09:32:53] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-05-05 09:32:53] INFO     [MainThread] ============================================================
+[2026-05-05 09:37:52] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_093752.html
+[2026-05-05 09:37:52] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 09:37:53] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_093753.html
+[2026-05-05 09:37:53] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 09:42:52] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_094252.html
+[2026-05-05 09:42:52] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 09:42:53] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_094253.html
+[2026-05-05 09:42:53] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 10:52:08] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-05-05 10:52:08] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-05-05 10:52:08] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-05-05 10:52:08] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-05-05 10:52:08] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-05-05 10:52:08] INFO     [MainThread] ============================================================
+[2026-05-05 10:52:08] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-05-05 10:52:08] INFO     [MainThread] ============================================================
+[2026-05-05 10:52:08] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-05-05 10:52:14] INFO     [MainThread]   ✓ Decoy konteynerleri ayakta
+[2026-05-05 10:52:14] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-05-05 10:52:14] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-05-05 10:52:14] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-05-05 10:52:14] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-05-05 10:52:14] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-05-05 10:52:14] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-05-05 10:52:14] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-05-05 10:52:14] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-05-05 10:52:14] INFO     [MainThread] ============================================================
+[2026-05-05 10:52:14] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-05-05 10:52:14] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-05-05 10:52:14] INFO     [MainThread] ============================================================
+[2026-05-05 10:53:37] INFO     [ftp-tailer] [FTP] connection | 172.18.0.1:2121 | {"state": "new"}
+[2026-05-05 10:53:37] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=OPTS UTF8 ON
+[2026-05-05 10:53:37] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "OPTS UTF8 ON", "user": "pid 8"}
+[2026-05-05 10:53:43] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=USER anonymous
+[2026-05-05 10:53:43] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "USER anonymous", "user": "pid 8"}
+[2026-05-05 10:53:44] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=PASS <password>
+[2026-05-05 10:53:44] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "PASS <password>", "user": "anonymous"}
+[2026-05-05 10:53:44] INFO     [ftp-tailer] [FTP] auth_success | 172.18.0.1:2121 | {"username": "ftp", "status": "OK", "method": "password"}
+[2026-05-05 10:53:45] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=PORT 192,168,56,1,252,212
+[2026-05-05 10:53:45] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "PORT 192,168,56,1,252,212", "user": "ftp"}
+[2026-05-05 10:53:45] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=NLST
+[2026-05-05 10:53:45] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "NLST", "user": "ftp"}
+[2026-05-05 10:57:14] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_105714.html
+[2026-05-05 10:57:14] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 08:00:07] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-05-05 08:00:07] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-05-05 08:00:22] INFO     [ssh-honeypot] [SSH] connection | 172.18.0.1:35698 | {"state": "new"}
+[2026-05-05 08:00:54] INFO     [ssh-client-172.18.0.1] [SSH] disconnection | 172.18.0.1:35698 | {"session_id": "ca3d1649b67c"}
+[2026-05-05 11:02:14] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_110214.html
+[2026-05-05 11:02:14] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 11:07:15] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260505_110714.html
+[2026-05-05 11:07:15] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-05-05 11:10:20] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:20] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:20] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:21] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:21] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:21] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:21] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:21] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:21] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:21] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:22] INFO     [MainThread] Sistem durduruluyor...
+[2026-05-05 11:10:22] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-05-05 11:10:22] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-05-05 11:10:23] INFO     [MainThread] Rapor oluşturuldu: reports\honeypot_report_20260505_111023.html
+[2026-05-05 11:10:23] INFO     [MainThread] Son rapor üretildi: reports\honeypot_report_20260505_111023.html
+[2026-05-05 11:10:23] INFO     [MainThread] Sistem durduruldu.
+[2026-05-05 08:13:58] INFO     [MainThread] image janus-sandbox:latest yok — docker/Dockerfile.sandbox'den derleniyor
+[2026-05-05 08:14:22] INFO     [MainThread] image janus-sandbox:latest hazır
+[2026-05-05 08:14:22] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-05-05 08:14:22] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-05-17 15:06:36] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-05-17 15:06:36] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-05-31 00:39:14] INFO     [MainThread] Rapor oluşturuldu: reports\honeypot_report_20260531_003914.html
+[2026-05-31 00:44:57] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-05-31 00:44:57] WARNING  [MainThread] GeoIP City DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-City.mmdb'
+[2026-05-31 00:44:57] WARNING  [MainThread] GeoIP ASN DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-ASN.mmdb'
+[2026-05-31 00:44:57] INFO     [MainThread] ThreatIntel başlatıldı (cache_ttl=3600s)
+[2026-05-31 00:44:57] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-05-31 00:44:57] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-05-31 00:44:57] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-05-31 00:44:57] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-05-31 00:44:57] INFO     [MainThread] ============================================================
+[2026-05-31 00:44:57] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-05-31 00:44:57] INFO     [MainThread] ============================================================
+[2026-05-31 00:44:57] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-05-31 00:44:58] ERROR    [MainThread] docker compose up başarısız: unable to get image 'janus-ftp:latest': failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+[2026-05-31 00:44:58] INFO     [MainThread] Correlation Engine başlatıldı (min_stages=3, min_services=2)
+[2026-05-31 00:44:58] INFO     [MainThread]   ✓ Correlation Engine başlatıldı
+[2026-05-31 00:44:58] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-05-31 00:44:58] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-05-31 00:44:58] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-05-31 00:44:58] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-05-31 00:44:58] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-05-31 00:44:58] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-05-31 00:44:58] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-05-31 00:44:58] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-05-31 00:44:58] INFO     [MainThread] ============================================================
+[2026-05-31 00:44:58] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-05-31 00:44:58] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-05-31 00:44:58] INFO     [MainThread] ============================================================
+[2026-06-03 14:24:19] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-03 14:24:19] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-03 19:22:09] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-06-03 19:22:09] WARNING  [MainThread] GeoIP City DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-City.mmdb'
+[2026-06-03 19:22:09] WARNING  [MainThread] GeoIP ASN DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-ASN.mmdb'
+[2026-06-03 19:22:09] INFO     [MainThread] ThreatIntel başlatıldı (cache_ttl=3600s)
+[2026-06-03 19:22:09] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-06-03 19:22:09] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-06-03 19:22:09] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-06-03 19:22:09] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-06-03 19:22:09] INFO     [MainThread] ============================================================
+[2026-06-03 19:22:09] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-06-03 19:22:09] INFO     [MainThread] ============================================================
+[2026-06-03 19:22:09] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-06-03 19:22:46] INFO     [MainThread]   ✓ Decoy konteynerleri ayakta
+[2026-06-03 19:22:46] INFO     [MainThread] Correlation Engine başlatıldı (min_stages=3, min_services=2)
+[2026-06-03 19:22:46] INFO     [MainThread]   ✓ Correlation Engine başlatıldı
+[2026-06-03 19:22:46] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-06-03 19:22:46] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-06-03 19:22:46] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-06-03 19:22:46] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-06-03 19:22:46] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-06-03 19:22:46] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-06-03 19:22:46] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-06-03 19:22:46] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-06-03 19:22:46] INFO     [MainThread] ============================================================
+[2026-06-03 19:22:46] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-06-03 19:22:46] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-06-03 19:22:46] INFO     [MainThread] ============================================================
+[2026-06-03 16:22:46] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-03 16:22:46] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-03 19:24:12] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/", "status": 200, "bytes": 15559, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+[2026-06-03 19:24:12] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:24:13] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/favicon.ico", "status": 404, "bytes": 314, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+[2026-06-03 19:24:16] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/collections", "status": 301, "bytes": 363, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+[2026-06-03 19:24:16] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:24:16] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/collections/", "status": 200, "bytes": 14779, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+[2026-06-03 19:24:16] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:24:17] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/heritage", "status": 301, "bytes": 360, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+[2026-06-03 19:24:17] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:24:17] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/heritage/", "status": 200, "bytes": 6367, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"}
+[2026-06-03 19:24:17] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:25:29] INFO     [ftp-tailer] [FTP] connection | 172.18.0.1:2121 | {"state": "new"}
+[2026-06-03 19:25:29] INFO     [ftp-tailer] ThreatIntel [FTP] 172.18.0.1: Private/LAN
+[2026-06-03 16:25:30] INFO     [ssh-honeypot] [SSH] connection | 172.18.0.1:34304 | {"state": "new"}
+[2026-06-03 16:25:30] INFO     [ssh-client-172.18.0.1] [SSH] disconnection | 172.18.0.1:34304 | {"session_id": "f5fa3275bf3b"}
+[2026-06-03 19:27:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_192746.html
+[2026-06-03 19:27:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-03 19:27:48] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/", "status": 200, "bytes": 15559, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:27:48] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:27:48] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/favicon.ico", "status": 404, "bytes": 314, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:29:37] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/boutiques", "status": 301, "bytes": 361, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:29:37] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:29:37] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/boutiques/", "status": 200, "bytes": 5961, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:29:37] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:29:37] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/heritage", "status": 301, "bytes": 360, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:29:37] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:29:37] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/heritage/", "status": 200, "bytes": 6367, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:29:37] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:29:41] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/.env", "status": 200, "bytes": 1067, "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"}
+[2026-06-03 19:29:41] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-03 19:29:41] CRITICAL [http-tailer] ⚠ ALARM [CRITICAL] env_file_accessed | 172.18.0.1 | ⚠ .env dosyası ele geçirildi! SSH/FTP credential'ları açığa çıktı.
+[2026-06-03 19:29:46] CRITICAL [correlation-engine] ⚠ ALARM [CRITICAL] kill_chain_detected | 172.18.0.1 | Çok aşamalı saldırı kill chain tespit edildi! 3 aşama / 2 servis / 5dk 28sn içinde
+[2026-06-03 19:29:46] CRITICAL [correlation-engine] KILL CHAIN [172.18.0.1]: Reconnaissance → Initial Access → Credential Access → ['ftp', 'http'] (5dk 28sn)
+[2026-06-03 19:31:44] INFO     [ftp-tailer] [FTP] connection | 172.18.0.1:2121 | {"state": "new"}
+[2026-06-03 19:31:44] INFO     [ftp-tailer] ThreatIntel [FTP] 172.18.0.1: Private/LAN
+[2026-06-03 19:31:51] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=USER ftpbackup
+[2026-06-03 19:31:51] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "USER ftpbackup", "user": "pid 11"}
+[2026-06-03 19:31:59] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=PASS <password>
+[2026-06-03 19:31:59] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "PASS <password>", "user": "ftpbackup"}
+[2026-06-03 19:31:59] INFO     [ftp-tailer] [FTP] auth_success | 172.18.0.1:2121 | {"username": "ftpbackup", "status": "OK", "method": "password"}
+[2026-06-03 19:31:59] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=SYST
+[2026-06-03 19:31:59] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "SYST", "user": "ftpbackup"}
+[2026-06-03 19:31:59] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=FEAT
+[2026-06-03 19:31:59] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "FEAT", "user": "ftpbackup"}
+[2026-06-03 19:32:01] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:32:01] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:32:01] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST
+[2026-06-03 19:32:01] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST", "user": "ftpbackup"}
+[2026-06-03 19:32:04] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:32:04] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:32:04] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST -la
+[2026-06-03 19:32:04] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST -la", "user": "ftpbackup"}
+[2026-06-03 19:32:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:32:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:32:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST
+[2026-06-03 19:32:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST", "user": "ftpbackup"}
+[2026-06-03 19:32:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:32:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:32:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST
+[2026-06-03 19:32:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST", "user": "ftpbackup"}
+[2026-06-03 19:32:07] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:32:07] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:32:07] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST
+[2026-06-03 19:32:07] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST", "user": "ftpbackup"}
+[2026-06-03 19:32:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_193246.html
+[2026-06-03 19:32:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-03 19:36:51] INFO     [ftp-tailer] [FTP] connection | 172.18.0.1:2121 | {"state": "new"}
+[2026-06-03 19:36:51] INFO     [ftp-tailer] ThreatIntel [FTP] 172.18.0.1: Private/LAN
+[2026-06-03 19:37:00] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=USER ftpbackup
+[2026-06-03 19:37:00] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "USER ftpbackup", "user": "pid 20"}
+[2026-06-03 19:37:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=PASS <password>
+[2026-06-03 19:37:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "PASS <password>", "user": "ftpbackup"}
+[2026-06-03 19:37:06] INFO     [ftp-tailer] [FTP] auth_success | 172.18.0.1:2121 | {"username": "ftpbackup", "status": "OK", "method": "password"}
+[2026-06-03 19:37:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=SYST
+[2026-06-03 19:37:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "SYST", "user": "ftpbackup"}
+[2026-06-03 19:37:06] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=FEAT
+[2026-06-03 19:37:06] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "FEAT", "user": "ftpbackup"}
+[2026-06-03 19:37:08] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:37:08] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:37:08] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST
+[2026-06-03 19:37:08] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST", "user": "ftpbackup"}
+[2026-06-03 19:37:14] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=PWD
+[2026-06-03 19:37:14] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "PWD", "user": "ftpbackup"}
+[2026-06-03 19:37:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_193746.html
+[2026-06-03 19:37:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-03 19:39:09] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=CWD daily
+[2026-06-03 19:39:09] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "CWD daily", "user": "ftpbackup"}
+[2026-06-03 19:39:10] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=EPSV
+[2026-06-03 19:39:10] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "EPSV", "user": "ftpbackup"}
+[2026-06-03 19:39:10] WARNING  [ftp-tailer] [FTP] KOMUT | 172.18.0.1 | session= | cmd=LIST
+[2026-06-03 19:39:10] INFO     [ftp-tailer] [FTP] command | 172.18.0.1:2121 | {"command": "LIST", "user": "ftpbackup"}
+[2026-06-03 19:42:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_194246.html
+[2026-06-03 19:42:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-03 19:47:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_194746.html
+[2026-06-03 19:47:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-03 19:52:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_195246.html
+[2026-06-03 19:52:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-03 19:57:46] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260603_195746.html
+[2026-06-03 19:57:46] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-07 18:08:54] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-07 18:08:54] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-15 20:30:04] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-15 20:30:04] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-15 20:32:38] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-15 20:32:38] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-16 13:00:01] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-06-16 13:00:01] WARNING  [MainThread] GeoIP City DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-City.mmdb'
+[2026-06-16 13:00:01] WARNING  [MainThread] GeoIP ASN DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-ASN.mmdb'
+[2026-06-16 13:00:01] INFO     [MainThread] ThreatIntel başlatıldı (cache_ttl=3600s)
+[2026-06-16 13:00:01] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-06-16 13:00:01] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-06-16 13:00:01] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-06-16 13:00:01] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-06-16 13:00:01] INFO     [MainThread] ============================================================
+[2026-06-16 13:00:01] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-06-16 13:00:01] INFO     [MainThread] ============================================================
+[2026-06-16 13:00:01] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-06-16 13:00:01] ERROR    [MainThread] docker compose up başarısız: unable to get image 'janus-ftp:latest': failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.
+[2026-06-16 13:00:01] INFO     [MainThread] Correlation Engine başlatıldı (min_stages=3, min_services=2)
+[2026-06-16 13:00:01] INFO     [MainThread]   ✓ Correlation Engine başlatıldı
+[2026-06-16 13:00:01] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-06-16 13:00:01] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-06-16 13:00:01] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-06-16 13:00:01] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-06-16 13:00:01] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-06-16 13:00:01] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-06-16 13:00:01] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-06-16 13:00:01] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-06-16 13:00:01] INFO     [MainThread] ============================================================
+[2026-06-16 13:00:01] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-06-16 13:00:01] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-06-16 13:00:01] INFO     [MainThread] ============================================================
+[2026-06-16 13:05:02] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260616_130502.html
+[2026-06-16 13:05:02] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-16 13:10:02] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260616_131002.html
+[2026-06-16 13:10:02] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-16 10:13:17] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-16 10:13:17] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-16 13:15:02] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260616_131502.html
+[2026-06-16 13:15:02] DEBUG    [periodic] Periyodik analiz tamamlandı.
+[2026-06-16 13:16:50] INFO     [MainThread] Sistem durduruluyor...
+[2026-06-16 13:16:50] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-06-16 13:16:50] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-06-16 13:16:51] INFO     [MainThread] Sistem durduruluyor...
+[2026-06-16 13:16:51] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-06-16 13:16:51] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-06-16 13:16:51] INFO     [MainThread] Sistem durduruluyor...
+[2026-06-16 13:16:51] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-06-16 13:16:51] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-06-16 13:16:51] INFO     [MainThread] Sistem durduruluyor...
+[2026-06-16 13:16:51] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-06-16 13:16:51] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-06-16 13:16:53] INFO     [MainThread] Rapor oluşturuldu: reports\honeypot_report_20260616_131653.html
+[2026-06-16 13:16:53] INFO     [MainThread] Son rapor üretildi: reports\honeypot_report_20260616_131653.html
+[2026-06-16 13:16:53] INFO     [MainThread] Sistem durduruldu.
+[2026-06-16 13:16:58] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-06-16 13:16:58] WARNING  [MainThread] GeoIP City DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-City.mmdb'
+[2026-06-16 13:16:58] WARNING  [MainThread] GeoIP ASN DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-ASN.mmdb'
+[2026-06-16 13:16:58] INFO     [MainThread] ThreatIntel başlatıldı (cache_ttl=3600s)
+[2026-06-16 13:16:58] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-06-16 13:16:58] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-06-16 13:16:58] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-06-16 13:16:58] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-06-16 13:16:58] INFO     [MainThread] ============================================================
+[2026-06-16 13:16:58] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-06-16 13:16:58] INFO     [MainThread] ============================================================
+[2026-06-16 13:16:58] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-06-16 13:17:02] INFO     [MainThread]   ✓ Decoy konteynerleri ayakta
+[2026-06-16 13:17:02] INFO     [MainThread] Correlation Engine başlatıldı (min_stages=3, min_services=2)
+[2026-06-16 13:17:02] INFO     [MainThread]   ✓ Correlation Engine başlatıldı
+[2026-06-16 13:17:02] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-06-16 13:17:02] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-06-16 13:17:02] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-06-16 13:17:02] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-06-16 13:17:02] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-06-16 13:17:02] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-06-16 13:17:02] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-06-16 13:17:02] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-06-16 13:17:02] INFO     [MainThread] ============================================================
+[2026-06-16 13:17:02] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-06-16 13:17:02] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-06-16 13:17:02] INFO     [MainThread] ============================================================
+[2026-06-16 10:17:02] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-16 10:17:02] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-16 13:21:11] INFO     [MainThread] Sistem durduruluyor...
+[2026-06-16 13:21:11] INFO     [MainThread]   FTP servisi durduruldu.
+[2026-06-16 13:21:11] INFO     [MainThread]   HTTP servisi durduruldu.
+[2026-06-16 13:21:14] INFO     [MainThread] Rapor oluşturuldu: reports\honeypot_report_20260616_132114.html
+[2026-06-16 13:21:14] INFO     [MainThread] Son rapor üretildi: reports\honeypot_report_20260616_132114.html
+[2026-06-16 13:21:14] INFO     [MainThread] Sistem durduruldu.
+[2026-06-16 13:21:22] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-06-16 13:21:22] WARNING  [MainThread] GeoIP City DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-City.mmdb'
+[2026-06-16 13:21:22] WARNING  [MainThread] GeoIP ASN DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-ASN.mmdb'
+[2026-06-16 13:21:22] INFO     [MainThread] ThreatIntel başlatıldı (cache_ttl=3600s)
+[2026-06-16 13:21:22] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-06-16 13:21:22] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-06-16 13:21:22] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-06-16 13:21:22] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-06-16 13:21:22] INFO     [MainThread] ============================================================
+[2026-06-16 13:21:22] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-06-16 13:21:22] INFO     [MainThread] ============================================================
+[2026-06-16 13:21:22] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-06-16 13:21:25] INFO     [MainThread]   ✓ Decoy konteynerleri ayakta
+[2026-06-16 13:21:25] INFO     [MainThread] Correlation Engine başlatıldı (min_stages=3, min_services=2)
+[2026-06-16 13:21:25] INFO     [MainThread]   ✓ Correlation Engine başlatıldı
+[2026-06-16 13:21:25] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-06-16 13:21:25] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-06-16 13:21:25] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-06-16 13:21:25] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-06-16 13:21:25] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-06-16 13:21:25] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-06-16 13:21:25] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-06-16 13:21:25] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-06-16 13:21:25] INFO     [MainThread] ============================================================
+[2026-06-16 13:21:25] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-06-16 13:21:25] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-06-16 13:21:25] INFO     [MainThread] ============================================================
+[2026-06-16 10:21:25] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-16 10:21:25] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-16 10:29:48] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-16 10:29:48] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-16 11:13:06] INFO     [ssh-honeypot] [SSH] connection | 172.18.0.1:47670 | {"state": "new"}
+[2026-06-16 11:13:06] INFO     [ssh-client-172.18.0.1] [SSH] disconnection | 172.18.0.1:47670 | {"session_id": "55bfbe9e6d0d"}
+[2026-06-16 14:13:26] INFO     [MainThread] Honeypot sistemi başlatılıyor...
+[2026-06-16 14:13:26] WARNING  [MainThread] GeoIP City DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-City.mmdb'
+[2026-06-16 14:13:26] WARNING  [MainThread] GeoIP ASN DB açılamadı: [Errno 2] No such file or directory: b'GeoLite2-ASN.mmdb'
+[2026-06-16 14:13:26] INFO     [MainThread] ThreatIntel başlatıldı (cache_ttl=3600s)
+[2026-06-16 14:13:26] ERROR    [MainThread] SandboxManager başlatılamadı: docker python SDK kurulu değil — `pip install docker`
+[2026-06-16 14:13:26] WARNING  [MainThread] SSH Honeypot atlandı: sandbox_manager yok.
+[2026-06-16 14:13:26] INFO     [MainThread] FTP Honeypot modülü yüklendi.
+[2026-06-16 14:13:26] INFO     [MainThread] HTTP Honeypot modülü yüklendi.
+[2026-06-16 14:13:26] INFO     [MainThread] ============================================================
+[2026-06-16 14:13:26] INFO     [MainThread]   HONEYPOT ERKEN UYARI SİSTEMİ BAŞLADI
+[2026-06-16 14:13:26] INFO     [MainThread] ============================================================
+[2026-06-16 14:13:26] INFO     [MainThread] Decoy konteynerleri build ediliyor...
+[2026-06-16 14:13:36] INFO     [MainThread]   ✓ Decoy konteynerleri ayakta
+[2026-06-16 14:13:36] INFO     [MainThread] Correlation Engine başlatıldı (min_stages=3, min_services=2)
+[2026-06-16 14:13:36] INFO     [MainThread]   ✓ Correlation Engine başlatıldı
+[2026-06-16 14:13:36] INFO     [MainThread] FTP tailer hazır (port=2121, log=logs/ftp/vsftpd.log)
+[2026-06-16 14:13:36] INFO     [MainThread]   ✓ FTP servisi başlatıldı
+[2026-06-16 14:13:36] INFO     [MainThread] HTTP tailer hazır (port=8080, log=logs/http/access.log)
+[2026-06-16 14:13:36] INFO     [MainThread]   ✓ HTTP servisi başlatıldı
+[2026-06-16 14:13:36] INFO     [MainThread] PCAP yakalama devre dışı.
+[2026-06-16 14:13:36] INFO     [MainThread]   ✓ PCAP yakalama başlatıldı
+[2026-06-16 14:13:36] INFO     [MainThread] Dashboard başlatılıyor: http://0.0.0.0:5000
+[2026-06-16 14:13:36] INFO     [MainThread]   ✓ Dashboard: http://0.0.0.0:5000
+[2026-06-16 14:13:36] INFO     [MainThread] ============================================================
+[2026-06-16 14:13:36] INFO     [MainThread]   Sistem hazır - saldırı bekleniyor...
+[2026-06-16 14:13:36] INFO     [MainThread]   Durdurmak için Ctrl+C
+[2026-06-16 14:13:36] INFO     [MainThread] ============================================================
+[2026-06-16 11:13:37] INFO     [MainThread] sandbox_manager hazır (image=janus-sandbox:latest, ttl=600s, max=20)
+[2026-06-16 11:13:37] INFO     [MainThread] SSH Honeypot dinlemede: 0.0.0.0:2222 (sandbox proxy)
+[2026-06-16 14:14:15] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/.env", "status": 200, "bytes": 1067, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"}
+[2026-06-16 14:14:15] DEBUG    [http-tailer] ThreatIntel [172.18.0.1]: Private/LAN
+[2026-06-16 14:14:15] CRITICAL [http-tailer] ⚠ ALARM [CRITICAL] env_file_accessed | 172.18.0.1 | ⚠ .env dosyası ele geçirildi! SSH/FTP credential'ları açığa çıktı.
+[2026-06-16 14:14:15] INFO     [http-tailer] [HTTP] request | 172.18.0.1:8080 | {"method": "GET", "path": "/favicon.ico", "status": 404, "bytes": 311, "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"}
+[2026-06-16 14:18:36] INFO     [periodic] Rapor oluşturuldu: reports\honeypot_report_20260616_141836.html
+[2026-06-16 14:18:36] DEBUG    [periodic] Periyodik analiz tamamlandı.

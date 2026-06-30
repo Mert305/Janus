@@ -1,0 +1,29 @@
+{"timestamp": "2026-05-05T07:53:37.659940+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "OPTS UTF8 ON"}
+{"timestamp": "2026-05-05T07:53:43.716737+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "USER anonymous"}
+{"timestamp": "2026-05-05T07:53:44.533563+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "PASS <password>"}
+{"timestamp": "2026-05-05T07:53:45.361224+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "PORT 192,168,56,1,252,212"}
+{"timestamp": "2026-05-05T07:53:45.379520+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "NLST"}
+{"timestamp": "2026-06-03T16:31:51.342032+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "USER ftpbackup"}
+{"timestamp": "2026-06-03T16:31:59.353583+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "PASS <password>"}
+{"timestamp": "2026-06-03T16:31:59.355759+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "SYST"}
+{"timestamp": "2026-06-03T16:31:59.356653+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "FEAT"}
+{"timestamp": "2026-06-03T16:32:01.760417+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:32:01.761640+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST"}
+{"timestamp": "2026-06-03T16:32:04.165240+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:32:04.166526+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST -la"}
+{"timestamp": "2026-06-03T16:32:06.169872+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:32:06.171208+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST"}
+{"timestamp": "2026-06-03T16:32:06.972881+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:32:06.973791+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST"}
+{"timestamp": "2026-06-03T16:32:07.776705+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:32:07.777930+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST"}
+{"timestamp": "2026-06-03T16:37:00.156145+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "USER ftpbackup"}
+{"timestamp": "2026-06-03T16:37:06.566972+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "PASS <password>"}
+{"timestamp": "2026-06-03T16:37:06.971151+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "SYST"}
+{"timestamp": "2026-06-03T16:37:06.971781+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "FEAT"}
+{"timestamp": "2026-06-03T16:37:08.974298+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:37:08.975837+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST"}
+{"timestamp": "2026-06-03T16:37:14.983589+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "PWD"}
+{"timestamp": "2026-06-03T16:39:09.531740+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "CWD daily"}
+{"timestamp": "2026-06-03T16:39:10.734501+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "EPSV"}
+{"timestamp": "2026-06-03T16:39:10.736002+00:00", "service": "ftp", "src_ip": "172.18.0.1", "session_id": "", "command": "LIST"}

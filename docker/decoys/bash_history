@@ -1,0 +1,18 @@
+ls -la /var/www/html
+cd /var/www/html
+cat .env
+mysql -u dbadmin -h db-prod-01.chronova.internal -pChr0nova#DB2024! chronova_prod
+sudo systemctl restart apache2
+tail -f /var/log/apache2/access.log
+ssh sysadmin@192.168.56.1 -p 2222
+ftp -p 192.168.56.1 2121
+scp /var/backups/chronova_prod.sql ftpbackup@192.168.56.1:/backups/
+cd /home/sysadmin
+cat /home/sysadmin/passwords.txt
+crontab -l
+ps aux | grep apache
+netstat -tlnp
+df -h
+free -m
+uptime
+exit

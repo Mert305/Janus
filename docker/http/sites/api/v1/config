@@ -1,0 +1,1 @@
+{"error":"unauthorized","message":"Bearer token required","hint":"See /admin/login for access","version":"4.2.1","env":"production"}

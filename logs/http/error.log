@@ -1,0 +1,102 @@
+[Tue May 05 07:34:48.825595 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Tue May 05 07:34:48.826662 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue May 05 07:35:16.463830 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue May 05 07:35:18.597649 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Tue May 05 07:35:18.598971 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue May 05 08:13:57.366815 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Tue May 05 08:13:57.368174 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue May 05 08:16:53.597619 2026] [mpm_event:alert] [pid 92:tid 93] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:16:55.599265 2026] [mpm_event:alert] [pid 111:tid 112] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:20:10.553432 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue May 05 08:20:12.121954 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Tue May 05 08:20:12.123067 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue May 05 08:20:20.570653 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue May 05 08:20:22.205523 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Tue May 05 08:20:22.206504 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue May 05 08:50:14.585746 2026] [mpm_event:alert] [pid 92:tid 93] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:16.596754 2026] [mpm_event:alert] [pid 111:tid 112] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:18.597845 2026] [mpm_event:alert] [pid 130:tid 131] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:20.595223 2026] [mpm_event:alert] [pid 149:tid 150] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:22.598799 2026] [mpm_event:alert] [pid 168:tid 169] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:24.606962 2026] [mpm_event:alert] [pid 187:tid 188] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:26.616496 2026] [mpm_event:alert] [pid 206:tid 207] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:28.607826 2026] [mpm_event:alert] [pid 225:tid 226] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:30.623082 2026] [mpm_event:alert] [pid 244:tid 245] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:32.625562 2026] [mpm_event:alert] [pid 263:tid 264] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:34.636677 2026] [mpm_event:alert] [pid 282:tid 283] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:36.637288 2026] [mpm_event:alert] [pid 301:tid 302] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:38.645776 2026] [mpm_event:alert] [pid 320:tid 321] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:40.640725 2026] [mpm_event:alert] [pid 339:tid 340] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:42.656320 2026] [mpm_event:alert] [pid 358:tid 359] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:44.660947 2026] [mpm_event:alert] [pid 377:tid 378] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:46.663767 2026] [mpm_event:alert] [pid 396:tid 397] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue May 05 08:50:48.674200 2026] [mpm_event:alert] [pid 415:tid 416] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 15:06:34.576750 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Sun May 17 15:06:34.577237 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Sun May 17 17:46:25.275851 2026] [mpm_event:alert] [pid 92:tid 93] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:27.267035 2026] [mpm_event:alert] [pid 111:tid 112] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:29.267724 2026] [mpm_event:alert] [pid 130:tid 131] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:31.271715 2026] [mpm_event:alert] [pid 149:tid 150] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:33.276326 2026] [mpm_event:alert] [pid 168:tid 169] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:35.278165 2026] [mpm_event:alert] [pid 187:tid 188] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:37.280317 2026] [mpm_event:alert] [pid 206:tid 207] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:39.284432 2026] [mpm_event:alert] [pid 225:tid 226] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:41.285766 2026] [mpm_event:alert] [pid 244:tid 245] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun May 17 17:46:43.288840 2026] [mpm_event:alert] [pid 263:tid 264] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:24:18.733307 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.66 (Unix) configured -- resuming normal operations
+[Wed Jun 03 14:24:18.736241 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Wed Jun 03 14:25:42.835831 2026] [mpm_event:alert] [pid 92:tid 93] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:44.836762 2026] [mpm_event:alert] [pid 111:tid 112] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:46.838685 2026] [mpm_event:alert] [pid 130:tid 131] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:48.841517 2026] [mpm_event:alert] [pid 149:tid 150] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:50.844113 2026] [mpm_event:alert] [pid 168:tid 169] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:52.846990 2026] [mpm_event:alert] [pid 187:tid 188] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:54.850562 2026] [mpm_event:alert] [pid 206:tid 207] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:56.852424 2026] [mpm_event:alert] [pid 225:tid 226] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:25:58.855390 2026] [mpm_event:alert] [pid 244:tid 245] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 14:26:00.858264 2026] [mpm_event:alert] [pid 263:tid 264] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:22:43.326419 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Wed Jun 03 16:22:45.855543 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.67 (Unix) configured -- resuming normal operations
+[Wed Jun 03 16:22:45.855978 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Wed Jun 03 16:24:44.993017 2026] [mpm_event:alert] [pid 92:tid 93] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:46.988257 2026] [mpm_event:alert] [pid 111:tid 112] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:48.995012 2026] [mpm_event:alert] [pid 130:tid 131] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:50.994975 2026] [mpm_event:alert] [pid 149:tid 150] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:52.999990 2026] [mpm_event:alert] [pid 168:tid 169] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:55.003504 2026] [mpm_event:alert] [pid 187:tid 188] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:57.005000 2026] [mpm_event:alert] [pid 206:tid 207] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:24:59.007794 2026] [mpm_event:alert] [pid 225:tid 226] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:25:01.010940 2026] [mpm_event:alert] [pid 244:tid 245] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Wed Jun 03 16:25:03.013484 2026] [mpm_event:alert] [pid 263:tid 264] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Sun Jun 07 18:08:52.974851 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.67 (Unix) configured -- resuming normal operations
+[Sun Jun 07 18:08:52.975901 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Jun 15 20:30:02.011192 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.67 (Unix) configured -- resuming normal operations
+[Mon Jun 15 20:30:02.013278 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Jun 15 20:32:34.919429 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Mon Jun 15 20:32:37.517225 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Mon Jun 15 20:32:37.517621 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Mon Jun 15 20:42:34.847954 2026] [core:error] [pid 11:tid 61] [client 172.18.0.1:49826] AH00135: Invalid method in request KJAH / HTTP/1.1
+[Tue Jun 16 10:13:16.085478 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Tue Jun 16 10:13:16.085925 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Jun 16 10:16:51.136254 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Jun 16 10:17:02.107759 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Tue Jun 16 10:17:02.108107 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Jun 16 10:21:12.030002 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Jun 16 10:21:24.830206 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Tue Jun 16 10:21:24.830615 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Jun 16 10:29:45.449880 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Jun 16 10:29:47.992106 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Tue Jun 16 10:29:47.992432 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Jun 16 11:13:33.206857 2026] [mpm_event:notice] [pid 1:tid 1] AH00492: caught SIGWINCH, shutting down gracefully
+[Tue Jun 16 11:13:36.306695 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.68 (Unix) configured -- resuming normal operations
+[Tue Jun 16 11:13:36.307402 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'
+[Tue Jun 16 11:14:37.384078 2026] [mpm_event:alert] [pid 92:tid 93] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:39.379720 2026] [mpm_event:alert] [pid 111:tid 112] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:41.383044 2026] [mpm_event:alert] [pid 130:tid 131] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:43.383258 2026] [mpm_event:alert] [pid 149:tid 150] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:45.386805 2026] [mpm_event:alert] [pid 168:tid 169] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:47.389251 2026] [mpm_event:alert] [pid 187:tid 188] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:49.392284 2026] [mpm_event:alert] [pid 206:tid 207] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:51.394029 2026] [mpm_event:alert] [pid 225:tid 226] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:53.398017 2026] [mpm_event:alert] [pid 244:tid 245] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread
+[Tue Jun 16 11:14:55.400938 2026] [mpm_event:alert] [pid 263:tid 264] (11)Resource temporarily unavailable: AH03104: ap_thread_create: unable to create worker thread

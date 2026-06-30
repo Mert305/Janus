@@ -1,0 +1,47 @@
+FROM alpine:3.19
+
+RUN apk add --no-cache vsftpd shadow
+
+# Sahte kullanıcılar
+RUN adduser -h /home/admin     -s /bin/sh -D admin     && echo 'admin:ftp@admin'       | chpasswd \
+ && adduser -h /home/ftpbackup -s /bin/sh -D ftpbackup && echo 'ftpbackup:Ftp@Backup2024' | chpasswd \
+ && adduser -h /home/anonymous -s /bin/sh -D anonymous 2>/dev/null || true
+
+# fake_filesystem decoy'ları
+COPY decoys/passwords.txt /home/admin/passwords.txt
+COPY decoys/db_dump.sql   /var/backups/db_dump.sql
+COPY decoys/shadow.bak    /etc/shadow.bak
+RUN chown admin:admin /home/admin/passwords.txt && chmod 600 /home/admin/passwords.txt \
+ && chmod 644 /var/backups/db_dump.sql \
+ && chmod 600 /etc/shadow.bak
+
+# Anonymous / giriş yapan saldırganın göreceği cazip sahte dosyalar
+# (chroot nedeniyle her kullanıcı yalnızca kendi ev dizinini görür)
+RUN mkdir -p /home/anonymous/backups /home/anonymous/finance
+COPY decoys/db_dump.sql   /home/anonymous/backups/prod_db_dump.sql
+COPY decoys/passwords.txt /home/anonymous/finance/employee_credentials.txt
+RUN printf 'Bu sunucu yalnizca yetkili personel icindir.\nDestek: it@corp.local\n' > /home/anonymous/README.txt \
+ && printf 'salary_q3_2024.xlsx\nvpn_config.ovpn\n' > /home/anonymous/finance/index.txt \
+ && chown -R anonymous:anonymous /home/anonymous \
+ && chmod -R 644 /home/anonymous/README.txt /home/anonymous/backups /home/anonymous/finance \
+ && find /home/anonymous -type d -exec chmod 755 {} +
+
+# ftpbackup: .env'de bilerek birakilan tuzak kimlik — giris yapilinca
+# inandirici "yedek" dosyalari gormeli
+RUN mkdir -p /home/ftpbackup/daily /home/ftpbackup/configs
+COPY decoys/db_dump.sql /home/ftpbackup/daily/backup_2024-09-30.sql
+COPY decoys/dotenv      /home/ftpbackup/configs/.env.production
+RUN printf 'mysql_root_backup.sql.gz\nldap_export.ldif\nbitlocker_keys.txt\n' > /home/ftpbackup/daily/MANIFEST.txt \
+ && printf '# Otomatik yedek hesabi - SILMEYIN\n# cron: 0 2 * * * /usr/local/bin/backup.sh\n' > /home/ftpbackup/README.txt \
+ && chown -R ftpbackup:ftpbackup /home/ftpbackup \
+ && find /home/ftpbackup -type f -exec chmod 644 {} + \
+ && find /home/ftpbackup -type d -exec chmod 755 {} +
+
+COPY ftp/vsftpd.conf /etc/vsftpd/vsftpd.conf
+COPY ftp/entrypoint.sh /usr/local/bin/ftp-entrypoint.sh
+RUN mkdir -p /var/log/vsftpd && touch /var/log/vsftpd/vsftpd.log \
+ && mkdir -p /var/run/vsftpd/empty \
+ && chmod +x /usr/local/bin/ftp-entrypoint.sh
+
+EXPOSE 21 30000-30009
+ENTRYPOINT ["/usr/local/bin/ftp-entrypoint.sh"]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>phpMyAdmin</title>
+<style>
+  body { font-family: Verdana, sans-serif; background:#fff; color:#000; margin:40px; }
+  .login { border:1px solid #ccc; padding:24px; max-width:380px; }
+  h1 { font-size:20px; }
+  label { display:block; margin:10px 0 4px; }
+  input { padding:6px; width:100%; box-sizing:border-box; }
+  button { margin-top:14px; padding:8px 16px; }
+  .footer { font-size:11px; color:#888; margin-top:20px; }
+</style>
+</head>
+<body>
+<div class="login">
+  <h1>Welcome to phpMyAdmin</h1>
+  <form method="POST" action="/phpmyadmin/index.php">
+    <label>Username</label>
+    <input type="text" name="pma_username">
+    <label>Password</label>
+    <input type="password" name="pma_password">
+    <label>Server Choice</label>
+    <input type="text" name="server" value="db.internal:3306">
+    <button type="submit">Go</button>
+  </form>
+  <div class="footer">phpMyAdmin 5.2.1</div>
+</div>
+</body>
+</html>
